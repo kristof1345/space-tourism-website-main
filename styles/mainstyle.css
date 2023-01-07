@@ -1,0 +1,266 @@
+:root {
+  --main-bg: #0b0d17;
+  --purpleish: #d0d6f9;
+  --white: #ffffff;
+  --H1: 150px;
+  --H2: 100px;
+  --H3: 56px;
+  --H4: 32px;
+  --H5: 28px;
+  --subheading1: 28px;
+  --subheading2: 14px;
+  --nav-txt: 16px;
+  --body-txt: 18px;
+  --H1234SH1: "Bellefair", serif;
+  --H5SH2NT: "Barlow Condensed", sans-serif;
+}
+
+.h5 {
+  font-size: var(--H5);
+  letter-spacing: 4.75px;
+  font-family: var(--H5SH2NT);
+}
+
+.h1 {
+  font-size: var(--H1);
+  font-family: var(--H1234SH1);
+}
+
+.text {
+  font-size: var(--body-txt);
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.index-body {
+  background-image: url(./../starter-code/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  background-color: var(--main-bg);
+}
+
+/*!Nav*/
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 40px 0px 40px 55px;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-line {
+  display: block;
+  background-color: var(--white);
+  height: 1px;
+  width: 100%;
+  margin: 0px -25px 0px 64px;
+  z-index: 1;
+  opacity: 0.25;
+}
+
+.nav-links {
+  box-sizing: initial;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px);
+  padding: 38px 190px 0px 150px;
+  gap: 50px;
+  display: flex;
+  border-radius: 2px;
+}
+
+.close {
+  display: none;
+}
+
+.nav-links > a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--H5SH2NT);
+  font-size: var(--nav-txt);
+  letter-spacing: 2.7px;
+  padding-bottom: 35px;
+  border: 3px solid transparent;
+  display: flex;
+  gap: 10px;
+}
+.link-num {
+  font-weight: 700;
+}
+
+.nav-links > a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+/*!Main content*/
+.home-wrapper {
+  display: flex;
+  padding: 200px 25px 20px 165px;
+  height: 600px;
+  justify-content: space-between;
+}
+
+.home-text-sec {
+  text-align: left;
+  width: 450px;
+}
+
+.home-text-sec > h5 {
+  color: var(--purpleish);
+}
+.home-text-sec > h1 {
+  color: var(--white);
+  margin-top: 35px;
+}
+.home-text-sec > p {
+  color: var(--purpleish);
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.home-button-sec {
+  text-align: right;
+  flex-grow: 1;
+  padding-top: 105px;
+  padding-right: 200px;
+}
+
+.home-button {
+  width: 274px;
+  height: 274px;
+  border: none;
+  background-color: var(--white);
+  border-radius: 100%;
+  font-family: var(--H1234SH1);
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+
+.home-button:hover {
+  animation: pulse 1200ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0);
+  }
+}
+
+/******** PHONE *********/
+
+@media (max-width: 500px) {
+  .index-body {
+    background-image: url(./../starter-code/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-bg);
+    height: 667px;
+  }
+
+  /*!Nav*/
+  .navbar {
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-line {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    padding: 120px 40px;
+    display: none;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .close {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 40px;
+  }
+
+  .nav-links > a {
+    display: block;
+    padding-bottom: 0px;
+  }
+  .link-num {
+    margin-right: 5px;
+  }
+
+  .nav-links > a:hover {
+    border-bottom: 3px solid transparent;
+  }
+
+  /*!Main content*/
+  .home-wrapper {
+    flex-direction: column;
+    padding: 10px 25px;
+    height: 560px;
+  }
+
+  .home-text-sec {
+    text-align: center;
+    flex-basis: 65%;
+    width: 100%;
+  }
+
+  .home-text-sec > h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .home-text-sec > h1 {
+    font-size: 80px;
+    margin-top: 25px;
+  }
+  .home-text-sec > p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .home-button-sec {
+    text-align: center;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .home-button {
+    width: 150px;
+    height: 150px;
+    font-size: 1.3rem;
+  }
+}
