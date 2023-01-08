@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   .index-body {
-    background-image: url(./../starter-code/assets/home/background-home-mobile.jpg);
+    background-image: url(../assets/home/background-home-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--main-bg);
@@ -93,7 +93,7 @@
 
   /*********************** Destination **************************/
   .dest-body {
-    background-image: url(./../starter-code/assets/destination/background-destination-mobile.jpg);
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
     background-size: cover;
     background-color: var(--main-bg);
     height: 850px;
