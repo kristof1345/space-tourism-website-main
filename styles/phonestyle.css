@@ -1,0 +1,166 @@
+@media (max-width: 500px) {
+  .index-body {
+    background-image: url(./../starter-code/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--main-bg);
+    height: 667px;
+  }
+
+  /*!Nav*/
+  .navbar {
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-line {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    padding: 120px 40px;
+    display: none;
+    flex-direction: column;
+    gap: 35px;
+    z-index: 3;
+  }
+
+  .close {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 40px;
+  }
+
+  .nav-links > a {
+    display: block;
+    padding-bottom: 0px;
+  }
+  .link-num {
+    margin-right: 5px;
+  }
+
+  .nav-links > a:hover {
+    border-bottom: 3px solid transparent;
+  }
+
+  /*!Main content*/
+  .home-wrapper {
+    flex-direction: column;
+    padding: 10px 25px;
+    height: 560px;
+  }
+
+  .home-text-sec {
+    text-align: center;
+    flex-basis: 65%;
+    width: 100%;
+  }
+
+  .home-text-sec > h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .home-text-sec > h1 {
+    font-size: 80px;
+    margin-top: 25px;
+  }
+  .home-text-sec > p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .home-button-sec {
+    text-align: center;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  .home-button {
+    width: 150px;
+    height: 150px;
+    font-size: 1.3rem;
+  }
+
+  /*********************** Destination **************************/
+  .dest-body {
+    background-image: url(./../starter-code/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-color: var(--main-bg);
+    height: 850px;
+  }
+
+  .content-wrapper {
+    width: 375px;
+  }
+
+  .title-sec {
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .title-sec-num {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .title-sec-title {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .planet-sec {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+
+  #picture {
+    height: 170px;
+    width: 170px;
+    margin: 26px 0px 26px 0px;
+  }
+
+  .planet-sec-dest {
+    text-align: center;
+    width: 100%;
+  }
+
+  .destinations {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .dest-link {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .dest-name {
+    margin-top: 33px;
+    font-size: 56px;
+  }
+
+  .dest-desc {
+    font-size: 15px;
+    width: 327px;
+    margin: 15px auto 30px auto;
+  }
+  .dest-line {
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .param {
+    display: block;
+  }
+}

@@ -20,7 +20,87 @@
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body class="index-body">
+  <body class="dest-body">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="nav-line"></div>
+        <div class="nav-links">
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="close-nav"
+            class="close"
+            onclick="closeNav()"
+          />
+          <a href="index.html">
+            <span class="link-num">00</span>
+            <span class="link-name">HOME</span>
+          </a>
+          <a href="destination.html">
+            <span class="link-num">01</span>
+            <span class="link-name">DESTINATION</span>
+          </a>
+          <a href="crew.html">
+            <span class="link-num">02</span>
+            <span class="link-name">CREW</span>
+          </a>
+          <a href="technology.html">
+            <span class="link-num">03</span>
+            <span class="link-name">TEHNOLOGY</span>
+          </a>
+        </div>
+
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="hamburger"
+          class="hamburger"
+          onclick="openNav()"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <div class="title-sec">
+          <h5 class="title-sec-num h5">01</h5>
+          <h5 class="title-sec-title h5">PICK YOUR DESTINATION</h5>
+        </div>
+        <div class="planet-sec">
+          <img
+            src="./../starter-code/assets/destination/image-moon.webp"
+            alt="moon"
+            id="picture"
+          />
+          <div class="planet-sec-dest">
+            <div class="destinations">
+              <p class="dest-link active" onclick="select(this)">MOON</p>
+              <p class="dest-link inactive" onclick="select(this)">MARS</p>
+              <p class="dest-link inactive" onclick="select(this)">EUROPA</p>
+              <p class="dest-link inactive" onclick="select(this)">TITAN</p>
+            </div>
+            <h1 class="h2 dest-name">MOON</h1>
+            <p class="text dest-desc">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <div class="dest-line"></div>
+            <div class="param">
+              <div class="distance">
+                <div class="subheading2">AVG. DISTANCE</div>
+                <div class="subheading1 km">384.400 KM</div>
+              </div>
+              <div class="time">
+                <div class="subheading2">EST. TRAVEL TIME</div>
+                <div class="subheading1 days">3 days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./../script/script.js"></script>
     <script src="./../script/desscript.js"></script>
   </body>
