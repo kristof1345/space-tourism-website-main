@@ -31,6 +31,16 @@
   font-family: var(--H1234SH1);
 }
 
+.h4 {
+  font-size: var(--H4);
+  font-family: var(--H1234SH1);
+}
+
+.h3 {
+  font-size: var(--H3);
+  font-family: var(--H1234SH1);
+}
+
 .text {
   font-size: var(--body-txt);
   font-family: var(--H5SH2NT);
@@ -151,7 +161,7 @@ body {
 .home-text-sec > p {
   color: var(--purpleish);
   margin-top: 30px;
-  line-height: 2;
+  line-height: 32px;
 }
 
 .home-button-sec {
@@ -205,7 +215,7 @@ body {
   font-weight: 700;
 }
 .title-sec-title {
-  color: var(--purpleish);
+  color: var(--white);
 }
 
 .planet-sec {
@@ -238,6 +248,7 @@ body {
   padding-bottom: 13px;
   font-size: var(--nav-txt);
   letter-spacing: 2.7px;
+  cursor: pointer;
 }
 .active {
   color: white;
@@ -252,10 +263,9 @@ body {
 
 .dest-desc {
   color: var(--purpleish);
-  line-height: 1.7;
+  line-height: 32px;
   font-size: 18px;
   margin: 15px auto 50px auto;
-  opacity: 0.8;
 }
 .dest-line {
   height: 1px;
@@ -286,4 +296,163 @@ body {
   color: var(--white);
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+/************************ Crew *************************/
+.crew-body {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-color: var(--main-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.crew-sec {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 140px 0 165px;
+  height: 700px;
+}
+
+.image-holder {
+  display: flex;
+  border-bottom: none;
+}
+
+.crew-sec-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+.crew-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+
+.crew-nav-link {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.crew-nav-link:hover {
+  opacity: 0.4;
+}
+
+.nav-link-active {
+  opacity: 1;
+}
+
+.crew-desc-sec {
+  margin-top: 100px;
+}
+
+.post {
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 15px;
+}
+
+.crew-name {
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.crew-desc {
+  width: 444px;
+  color: var(--purpleish);
+  line-height: 32px;
+}
+
+/**************** Technology *****************/
+.tech-body {
+  background-image: url(./../assets/technology/background-technology-desktop.jpg);
+  background-color: var(--main-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+#landscape {
+  display: none;
+}
+
+.tech-sec {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 30px 0 0 165px;
+}
+
+.tech-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tech-nav-link {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(75, 73, 73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 32px;
+}
+
+.active-techlink {
+  background-color: white;
+  color: var(--main-bg);
+  border: none;
+}
+
+.tech-nav-link:hover {
+  border: 1px solid white;
+}
+
+.some-text {
+  color: var(--purpleish);
+  font-size: 16px;
+  font-family: var(--H5SH2NT);
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.tech-name {
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.tech-desc {
+  font-size: 18px;
+  color: var(--purpleish);
+  line-height: 32px;
+}
+
+.tech-desc-sec {
+  width: 470px;
+  text-align: left;
+  margin: 0 auto 0 auto;
+}
+
+.tech-sec-text {
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }

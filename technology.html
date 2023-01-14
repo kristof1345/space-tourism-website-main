@@ -20,7 +20,91 @@
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body class="index-body">
+  <body class="tech-body">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="nav-line"></div>
+        <div class="nav-links">
+          <img
+            src="./assets/shared/icon-close.svg"
+            alt="close-nav"
+            class="close"
+            onclick="closeNav()"
+          />
+          <a href="index.html">
+            <span class="link-num">00</span>
+            <span class="link-name">HOME</span>
+          </a>
+          <a href="destination.html">
+            <span class="link-num">01</span>
+            <span class="link-name">DESTINATION</span>
+          </a>
+          <a href="crew.html">
+            <span class="link-num">02</span>
+            <span class="link-name">CREW</span>
+          </a>
+          <a href="technology.html">
+            <span class="link-num">03</span>
+            <span class="link-name">TEHNOLOGY</span>
+          </a>
+        </div>
+
+        <img
+          src="./assets/shared/icon-hamburger.svg"
+          alt="hamburger"
+          class="hamburger"
+          onclick="openNav()"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="tech-content-wrapper">
+        <div class="title-sec">
+          <h5 class="title-sec-num h5">03</h5>
+          <h5 class="title-sec-title h5">SPACE LAUNCH 101</h5>
+        </div>
+        <div class="tech-sec">
+          <div class="tech-image-holder">
+            <img
+              src="./assets/technology/image-launch-vehicle-portrait.jpg"
+              alt="ship"
+              id="portrait"
+            />
+            <img
+              src="./assets/technology/image-launch-vehicle-landscape.jpg"
+              alt="ship"
+              id="landscape"
+            />
+          </div>
+          <div class="tech-sec-text">
+            <div class="tech-nav">
+              <div
+                class="tech-nav-link active-techlink"
+                onclick="select(this, 1)"
+              >
+                1
+              </div>
+              <div class="tech-nav-link" onclick="select(this, 2)">2</div>
+              <div class="tech-nav-link" onclick="select(this, 3)">3</div>
+            </div>
+            <div class="tech-desc-sec">
+              <div class="h4 some-text">The terminology...</div>
+              <div class="h3 tech-name">Launch vehicle</div>
+              <div class="text tech-desc">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./script/script.js"></script>
     <script src="./script/techscript.js"></script>
   </body>
